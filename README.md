@@ -1,2 +1,2 @@
-# jquery_effects
-in this program i have used various jquery function
+# jQuery-Effects
+jQuery Effects based on a  Simple Website

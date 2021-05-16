@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      .animate_div {
+        background: #98bf21;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+      }
+      #panel,
+      #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+
+      #panel1,
+      #flip1 {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+      }
+
+      #panel1 {
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>showing the hide and show effects with callback function</h3>
+    <p class="hide_show_data">
+      If you click on the "Hide" button, I will disappear.
+    </p>
+    <p class="my_class">
+      for " unhidden the text " click the Show the Contents button
+    </p>
+
+    <button id="hide">Hide the Content</button>
+    <button id="show">Show the Contents</button>
+
+    <h3>fade effects using jquery</h3>
+
+    <button class="fadein">Click to fade in boxes</button>
+    <button class="fade_out">Click to fade out boxes</button>
+
+    <div
+      id="div1"
+      style="width: 80px; height: 80px; display: none; background-color: red"
+    ></div>
+    <br />
+    <div
+      id="div2"
+      style="width: 80px; height: 80px; display: none; background-color: green"
+    ></div>
+    <br />
+    <div
+      id="div3"
+      style="width: 80px; height: 80px; display: none; background-color: blue"
+    ></div>
+
+    <h3>showing the sliding operation</h3>
+
+    <div id="flip">
+      Click on slide_down_panel button to slide down the panel
+    </div>
+    <div id="panel">Hello world!</div>
+    <br />
+    <button class="slide_down_panel">slide_down_panel</button>&nbsp;
+    <button class="up_panel">up the panel</button>&nbsp;
+    <button class="stop">stop the slidding down effects</button>
+
+    <br />
+    <br />
+
+    <div id="flip1">Click on slide_up_panel button to slide up the panel</div>
+    <div id="panel1">Hello world!</div>
+    <br />
+
+    <button class="slide_up_panel">slide_up_panel</button> &nbsp;
+    <button class="down_panel">down the panel</button>&nbsp;
+    <button class="stop1">stop the slidding up effects</button>
+    <br />
+    <br />
+    <h3>showing the animation operation</h3>
+    <button class="animate">Start Animation</button> &nbsp;
+    <button class="reset_animate">Reset Animation</button>
+    <p>
+      By default, all HTML elements have a static position, and cannot be moved.
+      To manipulate the position, remember to first set the CSS position
+      property of the element to relative, fixed, or absolute!
+    </p>
+
+    <div class="animate_div"></div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /><br />
+    <h3>showing multple effects in one click by chaining them</h3>
+    <p id="chaining_para">jQuery is fun!!</p>
+    <button class="chaining">Start effects</button>
+    <button class="stop_operation">Change colour</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="hide_effects.js"></script>
+    <script src="fade_operation.js"></script>
+    <script src="slide_operation.js"></script>
+    <script src="slide_up.js"></script>
+    <script src="animate.js"></script>
+    <script src="chaining.js"></script>
+  </body>
+</html>
